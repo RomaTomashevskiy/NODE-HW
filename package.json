@@ -1,0 +1,25 @@
+{
+  "name": "node-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomaTomashevskiy/NODE-HW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomaTomashevskiy/NODE-HW/issues"
+  },
+  "homepage": "https://github.com/RomaTomashevskiy/NODE-HW#readme",
+  "dependencies": {
+    "commander": "^9.4.1",
+    "nodemon": "^2.0.20",
+    "shortid": "^2.2.16"
+  }
+}
