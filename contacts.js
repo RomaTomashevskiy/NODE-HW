@@ -2,14 +2,12 @@ const path = require('path');
 const fs = require('fs/promises');
 const shortid = require('shortid');
 
-
-
 const contactsPath = path.join(__dirname , './db/contacts.json');
 
-const  getContacts = async() => {
-    const contacts  = await listContacts();
-    return contacts;
-};
+// const getContacts = async() => {
+//     const contacts = await listContacts();
+//     return contacts;
+// };
 
 
 
@@ -23,7 +21,7 @@ const  listContacts = async() => {
 
 
 const getContactById = async contactId => {
-    const contacts = await getContact();
+    const contacts = await listContacts();
     const result = contacts.find(item => item.id === contactId);
 
     return result || null;
@@ -35,7 +33,7 @@ const addContact = async (name, email, phone) => {
         id, name, email, phone
     };
 
-    const contacts = await getContacts();
+    const contacts = await listContacts();
     contacts.push(newContact);
     await fs.writeFile(contactsPath, JSON.stringify(contacts));
 
@@ -45,16 +43,16 @@ const addContact = async (name, email, phone) => {
 
 
 const removeContact = async contactId => {
-    let contacts = await getContacts();
-    const contactFind = contacts.find(item => item.id === contactId);
-    if (!contactFind) {
-        return null;
-    };
-    const contactFilter = contacts.filter(item => item.id !== contactId);
-    contacts = contactFilter;
-    await fs.writeFile(contactsPath, JSON.stringify(contactFilter));
+    const contacts = await listContacts();
+    const index = contacts.findIndex((item) => item.id === contactId);
 
-    return contacts;
+    if (index === -1) {
+        return null;
+    }
+
+    const [result] = contacts.splice(index, 1);
+    await fs.writeFile(contactsPath, JSON.stringify(contacts));;
+    return result;
 };
 
 

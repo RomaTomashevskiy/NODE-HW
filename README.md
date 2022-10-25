@@ -4,7 +4,7 @@
 
 # node index.js --action="list"
 
-http://joxi.ru/n2Y7RoWC07Roor
+http://joxi.ru/YmEe1oOILBabEm
 
 <!-------------------------2----------------------------->
 
@@ -12,7 +12,7 @@ http://joxi.ru/n2Y7RoWC07Roor
 
 # node index.js --action="get" --id=5
 
-http://joxi.ru/D2PRVoqHWBYJYr
+http://joxi.ru/Y2LLpo7tvMVnO2
 
 <!-------------------------3----------------------------->
 
@@ -20,7 +20,7 @@ http://joxi.ru/D2PRVoqHWBYJYr
 
 # node index.js --action="add" --name="Mango" --email="mango@gmail.com" --phone="322-22-22"
 
-http://joxi.ru/Q2KdDoyTgy0yYA
+http://joxi.ru/KAg97LysON3gLm
 
 <!-------------------------4----------------------------->
 
@@ -28,4 +28,4 @@ http://joxi.ru/Q2KdDoyTgy0yYA
 
 # node index.js --action="remove" --id=3
 
-http://joxi.ru/Y2LLpo7tvM8LM2
+file:///C:/Users/Administrator/Pictures/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(151).png
