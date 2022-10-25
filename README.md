@@ -28,4 +28,4 @@ http://joxi.ru/KAg97LysON3gLm
 
 # node index.js --action="remove" --id=3
 
-file:///C:/Users/Administrator/Pictures/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(151).png
+http://joxi.ru/Vm6e51MIKREbar
